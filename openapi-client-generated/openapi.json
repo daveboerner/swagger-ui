@@ -1,0 +1,658 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Particle Sandbox",
+    "description" : "Particle FHIR Sandbox Operations below. Search for a patient then pull back any data required. Please contact support@particlehealth.com for a valid Auth Token",
+    "version" : "0.1"
+  },
+  "servers" : [ {
+    "url" : "https://fhirtest.particlehealth.com"
+  } ],
+  "security" : [ {
+    "BearerAuth" : [ ]
+  } ],
+  "tags" : [ {
+    "name" : "Base"
+  }, {
+    "name" : "Clinical"
+  }, {
+    "name" : "Financial"
+  }, {
+    "name" : "Foundation"
+  } ],
+  "paths" : {
+    "/fhir/stu3/AllergyIntolerance/" : {
+      "get" : {
+        "tags" : [ "Clinical" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/Appointment/" : {
+      "get" : {
+        "tags" : [ "Clinical" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "patient",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/metadata" : {
+      "get" : {
+        "tags" : [ "Clinical" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/CarePlan/" : {
+      "get" : {
+        "tags" : [ "Clinical" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/Claim/" : {
+      "get" : {
+        "tags" : [ "Financial" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/Condition/" : {
+      "get" : {
+        "tags" : [ "Clinical" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/Consent/" : {
+      "get" : {
+        "tags" : [ "Foundation" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/fhir+json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/DiagnosticReport/" : {
+      "get" : {
+        "tags" : [ "Clinical" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/DocumentReference/" : {
+      "get" : {
+        "tags" : [ "Foundation" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/Encounter/" : {
+      "get" : {
+        "tags" : [ "Base" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/ExplanationOfBenefit/" : {
+      "get" : {
+        "tags" : [ "Financial" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/FamilyMemberHistory/" : {
+      "get" : {
+        "tags" : [ "Clinical" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf/"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/fhir+json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/ImagingStudy/" : {
+      "get" : {
+        "tags" : [ "Clinical" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/Immunization/" : {
+      "get" : {
+        "tags" : [ "Clinical" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/MedicationRequest" : {
+      "get" : {
+        "tags" : [ "Clinical" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf"
+        }, {
+          "name" : "npi",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "1770589525"
+        }, {
+          "name" : "authoredon",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "gt2016-01-01"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/Observation/" : {
+      "get" : {
+        "tags" : [ "Clinical" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/Patient/" : {
+      "get" : {
+        "tags" : [ "Base" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "given",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "Allegra"
+        }, {
+          "name" : "birthdate",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "eq1954-05-04"
+        }, {
+          "name" : "gender",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "Female"
+        }, {
+          "name" : "npi",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "1770589525"
+        }, {
+          "name" : "family",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "Jones"
+        }, {
+          "name" : "address-postalcode",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "02740"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/Patient/7920a7f3-044f-48d9-b222-6677e1e3e8f6/$everything" : {
+      "get" : {
+        "tags" : [ "Base" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/Practitioner/" : {
+      "get" : {
+        "tags" : [ "Base" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    },
+    "/fhir/stu3/Procedure/" : {
+      "get" : {
+        "tags" : [ "Clinical" ],
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "3a5fcd8a-6689-42c3-a097-5065d2fc94bf"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://fhirtest.particlehealth.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://fhirtest.particlehealth.com"
+      } ]
+    }
+  },
+  "components" : {
+    "schemas" : { },
+    "securitySchemes" : {
+      "BearerAuth" : {
+        "type" : "http",
+        "scheme" : "bearer"
+      }
+    }
+  }
+}
